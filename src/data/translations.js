@@ -15,7 +15,7 @@ export const translations = {
       "Atmosphäre, Geschmack & gute Laune!"
     ],
     viewMenu: "Speisekarte ansehen",
-    orderPhone: "📞 Telefonisch bestellen",
+    orderPhone: "BESTELLEN",
     
     // Menu Section
     menuTitle: "Unsere Speisenkarte",
@@ -75,7 +75,7 @@ export const translations = {
       "Atmosphere, taste & good vibes!"
     ],
     viewMenu: "View Menu",
-    orderPhone: "📞 Order by Phone",
+    orderPhone: "ORDER",
     
     // Menu Section
     menuTitle: "Our Menu",
