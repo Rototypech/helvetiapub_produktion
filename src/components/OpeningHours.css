@@ -1,0 +1,138 @@
+.opening-hours {
+  position: relative;
+  overflow: hidden;
+}
+
+.hours-background {
+  padding: 80px 0;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hours-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 50px;
+  font-weight: 600;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+  font-family: 'Oswald', sans-serif;
+}
+
+.hours-table {
+  max-width: 650px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hours-row:last-child {
+  border-bottom: none;
+}
+
+.hours-row.closed {
+  background: rgba(220, 53, 69, 0.2);
+}
+
+.hours-row.closed .time {
+  background: #dc3545;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.day {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.time {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.hours-row.open .time {
+  color: #4a7c59;
+  font-weight: 600;
+}
+
+.hours-row.current-day {
+  background: rgba(212, 175, 55, 0.2);
+  border-left: 4px solid #d4af37;
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+}
+
+.hours-row.current-day .day {
+  color: #d4af37;
+  font-weight: 700;
+}
+
+.hours-row.current-day .time {
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .hours-background {
+    padding: 60px 0;
+    min-height: 100vh;
+  }
+  
+  .container {
+    min-height: 70vh;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .hours-table {
+    max-width: 500px;
+  }
+  
+  .hours-row {
+    padding: 20px 25px;
+  }
+  
+  .day, .time {
+    font-size: 1.2rem;
+  }
+}
