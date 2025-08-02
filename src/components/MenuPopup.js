@@ -25,7 +25,33 @@ const MenuPopup = ({ isOpen, onClose, menuData }) => {
         </div>
         
         <div className="menu-popup-content">
-          {menuData.items && menuData.items.length > 0 ? (
+          {menuData.categories && menuData.categories.length > 0 ? (
+            <div className="menu-categories">
+              {menuData.categories.map((category, categoryIndex) => (
+                <div key={categoryIndex} className="menu-category">
+                  <div className="menu-category-header">
+                    <h3 className="menu-category-name">{category.categoryName}</h3>
+                    <p className="menu-category-description">{category.categoryDescription}</p>
+                  </div>
+                  <div className="menu-items">
+                    {category.items.map((item, itemIndex) => (
+                      <div key={itemIndex} className="menu-item">
+                        <div className="menu-item-header">
+                          <h4 className="menu-item-name">{item.name}</h4>
+                          {item.price && (
+                            <div className="menu-item-price">{item.price}</div>
+                          )}
+                        </div>
+                        {item.description && (
+                          <p className="menu-item-description">{item.description}</p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : menuData.items && menuData.items.length > 0 ? (
             <div className="menu-items">
               {menuData.items.map((item, index) => (
                 <div key={index} className="menu-item">
