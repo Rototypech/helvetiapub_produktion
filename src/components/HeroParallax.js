@@ -183,7 +183,7 @@ const HeroParallax = () => {
             textColors={["#ffffff"]}
             className="text-xl md:text-2xl lg:text-4xl font-medium text-center"
             style={{
-              fontFamily: "'Oswald', sans-serif",
+              fontFamily: 'Sansation, sans-serif',
               textShadow: '2px 2px 6px rgba(0, 0, 0, 0.9)',
               letterSpacing: '0.02em',
               minHeight: '80px',
