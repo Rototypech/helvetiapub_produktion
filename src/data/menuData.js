@@ -36,7 +36,7 @@ export const menuData = {
     categories: [
       {
         categoryName: '🍷 Rotweine',
-        categoryDescription: 'Offene Rotweine vom Fass',
+        categoryDescription: 'Offene Rotweine im Offenausschank',
         items: [
           { name: 'Pinot Noir', price: 'CHF 5.50', description: 'Klassischer, eleganter Rotwein mit feinen Aromen von roten Beeren und weichem Abgang.' },
           { name: 'Tirteo Barbera', price: 'CHF 7.50', description: 'Intensiv, fruchtig und würzig – ein typischer Barbera aus dem Piemont mit Charakter.' }
@@ -44,7 +44,7 @@ export const menuData = {
       },
       {
         categoryName: '🥂 Weissweine',
-        categoryDescription: 'Offene Weissweine vom Fass',
+        categoryDescription: 'Offene Weissweine im Offenausschank',
         items: [
           { name: 'Fendant', price: 'CHF 5.50', description: 'Leichter, spritziger Walliser Weisswein mit mineralischer Note – der Klassiker zum Apéro.' },
           { name: 'Johannisberg', price: 'CHF 5.50', description: 'Fruchtbetonter Weisswein aus dem Wallis, vollmundig mit Aromen von reifen Birnen und Honig.' }
@@ -52,7 +52,7 @@ export const menuData = {
       },
       {
         categoryName: '🌸 Roséwein',
-        categoryDescription: 'Eleganter Rosé vom Fass',
+        categoryDescription: 'Eleganter Rosé im Offenausschank',
         items: [
           { name: 'Œil de Perdrix', price: 'CHF 5.50', description: 'Eleganter Rosé aus Neuenburg – zartfruchtig mit feinem Erdbeerduft.' }
         ]
