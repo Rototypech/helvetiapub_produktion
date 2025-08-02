@@ -12,6 +12,8 @@ import Footer from './components/Footer';
 import Impressum from './components/Impressum';
 import Datenschutz from './components/Datenschutz';
 import CookieBanner from './components/CookieBanner';
+import Login from './components/Login';
+import Admin from './components/Admin';
 
 const HomePage = () => (
   <>
@@ -45,6 +47,8 @@ function App() {
                 <Footer />
               </>
             } />
+            <Route path="/login" element={<Login />} />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
           <CookieBanner />
         </div>
