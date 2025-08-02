@@ -1,12 +1,33 @@
 export const menuData = {
   bier: {
     title: 'BIER',
-    items: [
-      { name: 'Pilsner', price: '€4.50', description: 'Crisp and refreshing Czech-style pilsner' },
-      { name: 'Weissbier', price: '€4.80', description: 'Traditional Bavarian wheat beer' },
-      { name: 'IPA', price: '€5.20', description: 'Hoppy India Pale Ale with citrus notes' },
-      { name: 'Guinness', price: '€5.50', description: 'Classic Irish stout on tap' },
-      { name: 'Local Craft Beer', price: '€5.80', description: 'Rotating selection of local brewery specials' }
+    categories: [
+      {
+        categoryName: '🍺 Bier vom Fass',
+        categoryDescription: 'Frisch gezapft vom Fass',
+        items: [
+          { name: 'Rugenbräu Spezial 4.8%', price: 'CHF 4.50', description: '3dl' },
+          { name: 'Rugenbräu Spezial 4.8%', price: 'CHF 6.00', description: '5dl' }
+        ]
+      },
+      {
+        categoryName: '🍾 Bier Flaschen',
+        categoryDescription: 'Internationale Bierspezialitäten',
+        items: [
+          { name: 'Desperados 5.9%', price: 'CHF 6.50', description: '33cl' },
+          { name: 'Corona Extra 4.5%', price: 'CHF 6.50', description: '33cl' },
+          { name: 'Rugenbräu Spezial Dunkel 5.2%', price: 'CHF 6.50', description: '33cl' },
+          { name: 'Rugenbräu Weizen 5.2%', price: 'CHF 6.50', description: '33cl' },
+          { name: 'Erdinger Weissbier 5.3%', price: 'CHF 7.00', description: '50cl' }
+        ]
+      },
+      {
+        categoryName: '🚫 Ohne Alkohol',
+        categoryDescription: 'Alkoholfreie Alternativen',
+        items: [
+          { name: 'Rugenbräu Alkoholfrei <0.5%', price: 'CHF 4.50', description: '33cl' }
+        ]
+      }
     ]
   },
   
