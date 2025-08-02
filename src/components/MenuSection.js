@@ -13,7 +13,7 @@ const MenuSection = () => {
     { title: 'COCKTAILS & SPIRITS', image: '/images/sp-coktails.png', alt: 'Cocktails and Spirits', key: 'cocktails' },
     { title: 'SOFTGETRÄNKE', image: '/images/sp-softgetraenke.png', alt: 'Soft Drinks', key: 'softgetraenke' },
     { title: 'KAFFEE & TEE', image: '/images/sp-kaffee-tee.png', alt: 'Coffee and Tea', key: 'kaffee' },
-    { title: 'Pizza, Pasta & Mehr', image: '/images/sp-pizza.png', alt: 'Pizza, Pasta & More', key: 'pizza' }
+    { title: 'PIZZA, PASTA & MEHR', image: '/images/sp-pizza.png', alt: 'Pizza, Pasta & More', key: 'pizza' }
   ];
 
   const handleCardClick = (category) => {

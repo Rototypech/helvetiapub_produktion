@@ -242,7 +242,7 @@ export const menuData = {
   },
   
   pizza: {
-    title: 'Pizza, Pasta & Mehr',
+    title: 'PIZZA, PASTA & MEHR',
     categories: [
       {
         categoryName: '🍕 Pizza',
