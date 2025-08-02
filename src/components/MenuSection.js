@@ -5,7 +5,7 @@ const MenuSection = () => {
   const menuCategories = [
     { title: 'BIER', image: '/images/sp-bier.png', alt: 'Beer' },
     { title: 'WEIN', image: '/images/sp-wine.png', alt: 'Wine' },
-    { title: 'Cocktails & Shots', image: '/images/sp-coktails.png', alt: 'Cocktails and Shots' },
+    { title: 'Cocktails & Spirits', image: '/images/sp-coktails.png', alt: 'Cocktails and Spirits' },
     { title: 'SOFTGETRÄNKE', image: '/images/sp-softgetraenke.png', alt: 'Soft Drinks' },
     { title: 'KAFFEE & TEE', image: '/images/sp-kaffee-tee.png', alt: 'Coffee and Tea' },
     { title: 'WÄRME KÜCHE', image: '/images/sp-pizza.png', alt: 'Warm Kitchen' }
