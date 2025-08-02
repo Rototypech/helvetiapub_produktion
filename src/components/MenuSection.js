@@ -1,15 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './MenuSection.css';
+import MenuPopup from './MenuPopup';
+import { menuData } from '../data/menuData';
 
 const MenuSection = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
   const menuCategories = [
-    { title: 'BIER', image: '/images/sp-bier.png', alt: 'Beer' },
-    { title: 'WEIN', image: '/images/sp-wine.png', alt: 'Wine' },
-    { title: 'Cocktails & Spirits', image: '/images/sp-coktails.png', alt: 'Cocktails and Spirits' },
-    { title: 'SOFTGETRÄNKE', image: '/images/sp-softgetraenke.png', alt: 'Soft Drinks' },
-    { title: 'KAFFEE & TEE', image: '/images/sp-kaffee-tee.png', alt: 'Coffee and Tea' },
-    { title: 'WÄRME KÜCHE', image: '/images/sp-pizza.png', alt: 'Warm Kitchen' }
+    { title: 'BIER', image: '/images/sp-bier.png', alt: 'Beer', key: 'bier' },
+    { title: 'WEIN', image: '/images/sp-wine.png', alt: 'Wine', key: 'wein' },
+    { title: 'Cocktails & Spirits', image: '/images/sp-coktails.png', alt: 'Cocktails and Spirits', key: 'cocktails' },
+    { title: 'SOFTGETRÄNKE', image: '/images/sp-softgetraenke.png', alt: 'Soft Drinks', key: 'softgetraenke' },
+    { title: 'KAFFEE & TEE', image: '/images/sp-kaffee-tee.png', alt: 'Coffee and Tea', key: 'kaffee' },
+    { title: 'WÄRME KÜCHE', image: '/images/sp-pizza.png', alt: 'Warm Kitchen', key: 'pizza' }
   ];
+
+  const handleCardClick = (category) => {
+    setSelectedCategory(menuData[category.key]);
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+    setSelectedCategory(null);
+  };
 
   // Spotlight effect handler
   const handleMouseMove = (e) => {
@@ -40,9 +55,11 @@ const MenuSection = () => {
               className="menu-card spotlight-card"
               onMouseMove={handleMouseMove}
               onMouseLeave={handleMouseLeave}
+              onClick={() => handleCardClick(category)}
               style={{
                 '--spotlight-x': '50%',
-                '--spotlight-y': '50%'
+                '--spotlight-y': '50%',
+                cursor: 'pointer'
               }}
             >
               <div className="menu-card-image">
@@ -60,6 +77,12 @@ const MenuSection = () => {
           <p className="availability-text">ESSEN VERFÜGBAR: 17:00 - 21:30</p>
         </div>
       </div>
+
+      <MenuPopup 
+        isOpen={isPopupOpen}
+        onClose={closePopup}
+        menuData={selectedCategory}
+      />
     </section>
   );
 };

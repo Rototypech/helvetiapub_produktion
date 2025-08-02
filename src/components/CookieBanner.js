@@ -6,10 +6,8 @@ const CookieBanner = () => {
   const [showSettings, setShowSettings] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem('helvetia-cookie-consent');
-    if (!consent) {
-      setShowBanner(true);
-    }
+    // Zawsze pokazuj banner (usuń localStorage check)
+    setShowBanner(true);
   }, []);
 
   const acceptAll = () => {
