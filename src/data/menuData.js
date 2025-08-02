@@ -22,7 +22,7 @@ export const menuData = {
   },
   
   cocktails: {
-    title: 'Cocktails & Spirits',
+    title: 'COCKTAILS & SPIRITS',
     items: [
       // Cocktails – CHF 12.00 / ca. 25 cl
       { name: 'Margarita', price: 'CHF 12.00', description: 'Tequila, Cointreau, frische Limette' },
