@@ -1,6 +1,7 @@
 {
   "short_name": "Helvetia Pub",
   "name": "Helvetia Pub - Traditional Swiss Pub in Brienz",
+  "version": "2.0.0",
   "icons": [
     {
       "src": "favicon.ico",
