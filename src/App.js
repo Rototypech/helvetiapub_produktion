@@ -53,7 +53,10 @@ function App() {
   );
 }
 
-export default App;// Force cache bust
+export default App;
+
+// Force cache bust - Vercel CDN issue
 // Force new deployment Sat Aug  2 18:10:35 CEST 2025
 // Force new deployment Sat Aug  2 18:12:42 CEST 2025
 // Force deployment Sat Aug  2 18:18:02 CEST 2025
+// Force deployment Sat Aug  2 18:25:00 CEST 2025 - CDN cache bust
