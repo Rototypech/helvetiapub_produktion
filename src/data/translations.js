@@ -25,7 +25,7 @@ export const translations = {
       cocktails: "COCKTAILS & SPIRITS",
       softDrinks: "SOFTGETRÄNKE",
       coffee: "KAFFEE & TEE",
-      warmKitchen: "WÄRME KÜCHE"
+      warmKitchen: "Pizza, Pasta & Mehr"
     },
     foodAvailable: "ESSEN VERFÜGBAR: 17:00 - 21:30",
     

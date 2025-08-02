@@ -157,14 +157,78 @@ export const menuData = {
   },
   
   pizza: {
-    title: 'WÄRME KÜCHE',
-    items: [
-      { name: 'Margherita Pizza', price: '€12.50', description: 'Tomato, mozzarella, fresh basil' },
-      { name: 'Pepperoni Pizza', price: '€14.50', description: 'Spicy salami with mozzarella' },
-      { name: 'Schnitzel', price: '€16.80', description: 'Breaded pork cutlet with potato salad' },
-      { name: 'Bratwurst', price: '€11.50', description: 'Grilled sausage with sauerkraut' },
-      { name: 'Cheese Platter', price: '€13.20', description: 'Selection of local cheeses with bread' },
-      { name: 'Soup of the Day', price: '€6.50', description: 'Ask your server for today\'s special' }
+    title: 'Pizza, Pasta & Mehr',
+    categories: [
+      {
+        categoryName: '🍕 Pizza',
+        categoryDescription: 'Alle Pizzen auch als ½ Portion erhältlich (Preisreduktion CHF 3.-)',
+        items: [
+          { name: 'Margherita', price: 'CHF 15.90', description: 'Tomaten und Mozzarella' },
+          { name: 'Funghi', price: 'CHF 19.90', description: 'Tomaten, Champignons und Mozzarella' },
+          { name: 'Fiorentina', price: 'CHF 19.90', description: 'Tomaten, Spinat, Quark, Knoblauch und Mozzarella' },
+          { name: 'Napoli', price: 'CHF 19.50', description: 'Tomaten, Sardellen, Kapern, Oliven und Mozzarella' },
+          { name: 'Gorgonzola', price: 'CHF 21.90', description: 'Tomaten, Gorgonzola und Mozzarella' },
+          { name: 'Etna', price: 'CHF 19.90', description: 'Tomaten, Speck, scharfe Salami, Zwiebeln, Knoblauch und Mozzarella' },
+          { name: 'Hawaii', price: 'CHF 19.80', description: 'Tomaten, Vorderschinken, Ananas und Mozzarella' },
+          { name: 'Frutti di Mare', price: 'CHF 20.10', description: 'Tomaten, Meeresfrüchte und Mozzarella' },
+          { name: 'Chicken', price: 'CHF 22.90', description: 'Tomaten, Peperoni, Zwiebeln, Pouletbrust und Mozzarella' },
+          { name: 'Vegetariana', price: 'CHF 19.90', description: 'Tomaten, Verschiedene Gemüse und Mozzarella' },
+          { name: 'Quattro Formaggi', price: 'CHF 19.90', description: 'Tomaten, Verschiedene Käsesorten und Mozzarella' },
+          { name: 'Al Tonno', price: 'CHF 19.90', description: 'Tomaten, Thon, Oliven, Zwiebeln und Mozzarella' },
+          { name: 'Prosciutto', price: 'CHF 19.80', description: 'Tomaten, Vorderschinken und Mozzarella' },
+          { name: 'Prosciutto e Funghi', price: 'CHF 19.90', description: 'Tomaten, Champignons, Vorderschinken und Mozzarella' },
+          { name: 'Quattro Stagioni', price: 'CHF 20.90', description: 'Tomaten, Vorderschinken, Artischocken, Champignons, Peperoni und Mozzarella' },
+          { name: 'Luigi', price: 'CHF 19.80', description: 'Tomaten, scharfe Salami, Zwiebeln, Oliven und Mozzarella' },
+          { name: 'Contadina', price: 'CHF 19.90', description: 'Tomaten, Speck, Zwiebeln und Mozzarella' },
+          { name: 'Diti\'s Pizza', price: 'CHF 23.90', description: 'Lassen Sie sich überraschen…' }
+        ]
+      },
+      {
+        categoryName: '🍝 Pasta',
+        categoryDescription: 'Hausgemachte italienische Pasta',
+        items: [
+          { name: 'Gemüselasagne', price: 'CHF 19.50', description: 'Frische Gemüselasagne' },
+          { name: 'Lasagne Bolognaise', price: 'CHF 21.50', description: 'Klassische Bolognaise-Lasagne' },
+          { name: 'Spaghetti Bolognaise', price: 'CHF 21.50', description: 'Spaghetti mit Fleischsauce' },
+          { name: 'Spaghetti Carbonara', price: 'CHF 21.00', description: 'Spaghetti mit Speck und Ei' },
+          { name: 'Spaghetti Napoli', price: 'CHF 19.50', description: 'Spaghetti mit Tomatensauce' },
+          { name: 'Spaghetti Aglio e Olio', price: 'CHF 21.50', description: 'Spaghetti mit Knoblauch und Olivenöl' }
+        ]
+      },
+      {
+        categoryName: '🥩 Grilladen',
+        categoryDescription: 'Frisch vom Grill serviert',
+        items: [
+          { name: 'Schweinssteak 180gr', price: 'CHF 29.50', description: 'Serviert mit verschiedenen Salaten' },
+          { name: 'Pouletbrust', price: 'CHF 27.50', description: 'Serviert mit verschiedenen Salaten' },
+          { name: 'Portion Pommes Frites', price: 'CHF 9.50', description: 'Als Hauptspeise' },
+          { name: 'Aufpreis Pommes Frites', price: 'CHF 7.00', description: 'Als Beilage' }
+        ]
+      },
+      {
+        categoryName: '🥗 Salate & Vorspeisen',
+        categoryDescription: 'Frische Salate und Vorspeisen',
+        items: [
+          { name: 'Grüner Salat', price: 'CHF 8.00', description: 'Frischer grüner Salat' },
+          { name: 'Grosser gemischter Salat', price: 'CHF 9.90', description: 'Grosse Portion gemischter Salat' },
+          { name: 'Nüsslisalat', price: 'CHF 12.90', description: 'Mit Speckwürfeli, Ei & Croutons' },
+          { name: 'Tomatensalat', price: 'CHF 11.90', description: 'Frische Tomaten' },
+          { name: 'Tomaten/Mozzarella Salat', price: 'CHF 21.50', description: 'Caprese-Salat' },
+          { name: 'Salat teller', price: 'CHF 19.50', description: 'Gemischter Salatteller' },
+          { name: 'Thonsalat garniert', price: 'CHF 21.50', description: 'Thonsalat mit Garnitur' },
+          { name: 'Cervelat Salat garniert', price: 'CHF 20.50', description: 'Cervelat-Salat mit Garnitur' },
+          { name: 'Cervelat-Käse Salat garniert', price: 'CHF 21.50', description: 'Cervelat-Käse-Salat mit Garnitur' }
+        ]
+      },
+      {
+        categoryName: '🍲 Suppen',
+        categoryDescription: 'Hausgemachte warme Suppen',
+        items: [
+          { name: 'Tagessuppe', price: 'CHF 7.50', description: 'Suppe des Tages' },
+          { name: 'Tomatencremesuppe', price: 'CHF 7.50', description: 'Cremige Tomatensuppe' },
+          { name: 'Pilzcrémesuppe', price: 'CHF 7.50', description: 'Cremige Pilzsuppe' }
+        ]
+      }
     ]
   }
 };
