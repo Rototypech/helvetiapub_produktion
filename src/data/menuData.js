@@ -156,24 +156,70 @@ export const menuData = {
   
   softgetraenke: {
     title: 'SOFTGETRÄNKE',
-    items: [
-      { name: 'Coca Cola', price: '€3.50', description: 'Classic cola' },
-      { name: 'Sprite', price: '€3.50', description: 'Lemon-lime soda' },
-      { name: 'Orange Juice', price: '€4.00', description: 'Freshly squeezed' },
-      { name: 'Mineral Water', price: '€2.80', description: 'Still or sparkling' },
-      { name: 'Apple Juice', price: '€3.80', description: 'Pure apple juice' }
+    categories: [
+      {
+        categoryName: '🚰 Offen (vom Zapfhahn)',
+        categoryDescription: 'Frisch gezapfte Getränke',
+        items: [
+          { name: 'Mineralwasser', price: 'CHF 4.20', description: '3dl' },
+          { name: 'Mineralwasser', price: 'CHF 5.50', description: '5dl' },
+          { name: 'Coca Cola', price: 'CHF 4.20', description: '3dl' },
+          { name: 'Coca Cola', price: 'CHF 5.50', description: '5dl' },
+          { name: 'Ice Tea', price: 'CHF 4.20', description: '3dl' },
+          { name: 'Ice Tea', price: 'CHF 5.50', description: '5dl' },
+          { name: 'Rivella rot', price: 'CHF 4.20', description: '3dl' },
+          { name: 'Rivella rot', price: 'CHF 5.50', description: '5dl' },
+          { name: 'Sprite', price: 'CHF 4.20', description: '3dl' },
+          { name: 'Sprite', price: 'CHF 5.50', description: '5dl' },
+          { name: 'Orangensaft', price: 'CHF 4.50', description: 'Frisch gepresst' }
+        ]
+      },
+      {
+        categoryName: '🍾 Flaschen',
+        categoryDescription: 'Getränke in Flaschen',
+        items: [
+          { name: 'Mineral ohne Gas', price: 'CHF 5.00', description: '33cl' },
+          { name: 'Cola Zero', price: 'CHF 5.00', description: '33cl' },
+          { name: 'Rivella blau', price: 'CHF 5.00', description: '33cl' },
+          { name: 'Bitter Lemon', price: 'CHF 5.00', description: '2dl' },
+          { name: 'Tonic Water', price: 'CHF 5.00', description: '2dl' },
+          { name: 'Fanta', price: 'CHF 5.00', description: '33cl' },
+          { name: 'San Bitter', price: 'CHF 5.00', description: '10cl' },
+          { name: 'Red Bull', price: 'CHF 6.00', description: '25cl' }
+        ]
+      }
     ]
   },
   
   kaffee: {
     title: 'KAFFEE & TEE',
-    items: [
-      { name: 'Espresso', price: '€2.50', description: 'Strong Italian coffee' },
-      { name: 'Cappuccino', price: '€3.50', description: 'Espresso with steamed milk foam' },
-      { name: 'Latte', price: '€4.00', description: 'Espresso with steamed milk' },
-      { name: 'Green Tea', price: '€3.00', description: 'Premium Japanese sencha' },
-      { name: 'Black Tea', price: '€2.80', description: 'English breakfast blend' },
-      { name: 'Herbal Tea', price: '€3.20', description: 'Chamomile or peppermint' }
+    categories: [
+      {
+        categoryName: '☕ Kaffee Spezialitäten',
+        categoryDescription: 'Frisch gebrühter Kaffee und Espresso-Getränke',
+        items: [
+          { name: 'Kaffee Crème / Schale / Espresso', price: 'CHF 4.50', description: 'Klassischer Kaffee' },
+          { name: 'Espresso doppio', price: 'CHF 6.50', description: 'Doppelter Espresso' },
+          { name: 'Cappuccino', price: 'CHF 6.00', description: 'Espresso mit Milchschaum' },
+          { name: 'Latte Macchiato', price: 'CHF 6.50', description: 'Espresso mit heißer Milch' }
+        ]
+      },
+      {
+        categoryName: '🍃 Tee',
+        categoryDescription: 'Verschiedene Teesorten',
+        items: [
+          { name: 'Diverse Tee', price: 'CHF 4.00', description: 'Verschiedene Teesorten' }
+        ]
+      },
+      {
+        categoryName: '🥃 Kaffee mit Alkohol',
+        categoryDescription: 'Kaffee-Spezialitäten mit Spirituosen',
+        items: [
+          { name: 'Kaffee Baileys', price: 'CHF 8.50', description: 'Kaffee mit Baileys Irish Cream' },
+          { name: 'Kaffee Luz/Fertig', price: 'CHF 7.50', description: 'Kaffee mit Schnaps' },
+          { name: 'Coretto Grappa', price: 'CHF 7.50', description: 'Espresso mit Grappa' }
+        ]
+      }
     ]
   },
   
