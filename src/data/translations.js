@@ -22,7 +22,7 @@ export const translations = {
     menuCategories: {
       beer: "BIER",
       wine: "WEIN", 
-      cocktails: "COKTAILS & SHOTS",
+      cocktails: "Cocktails & Shots",
       softDrinks: "SOFTGETRÄNKE",
       coffee: "KAFFEE & TEE",
       warmKitchen: "WÄRME KÜCHE"
@@ -82,7 +82,7 @@ export const translations = {
     menuCategories: {
       beer: "BEER",
       wine: "WINE",
-      cocktails: "COCKTAILS & SHOTS", 
+      cocktails: "Cocktails & Shots", 
       softDrinks: "SOFT DRINKS",
       coffee: "COFFEE & TEA",
       warmKitchen: "WARM KITCHEN"

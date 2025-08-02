@@ -1,22 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './MenuSection.css';
-import MenuPopup from './MenuPopup';
-import SimpleGlitchText from './SimpleGlitchText';
-import { menuData } from '../data/menuData';
-import { useTranslation } from '../hooks/useTranslation';
 
 const MenuSection = () => {
-  const [selectedMenu, setSelectedMenu] = useState(null);
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const { t } = useTranslation();
-
   const menuCategories = [
-    { title: 'BIER', image: '/images/sp-bier.png', alt: 'Beer', key: 'bier' },
-    { title: 'WEIN', image: '/images/sp-wine.png', alt: 'Wine', key: 'wein' },
-    { title: 'COKTAILS & SHOTS', image: '/images/sp-coktails.png', alt: 'Cocktails and Shots', key: 'cocktails' },
-    { title: 'SOFTGETRÄNKE', image: '/images/sp-softgetraenke.png', alt: 'Soft Drinks', key: 'softgetraenke' },
-    { title: 'KAFFEE & TEE', image: '/images/sp-kaffee-tee.png', alt: 'Coffee and Tea', key: 'kaffee' },
-    { title: 'WÄRME KÜCHE', image: '/images/sp-pizza.png', alt: 'Warm Kitchen', key: 'pizza' }
+    { title: 'BIER', image: '/images/sp-bier.png', alt: 'Beer' },
+    { title: 'WEIN', image: '/images/sp-wine.png', alt: 'Wine' },
+    { title: 'Cocktails & Shots', image: '/images/sp-coktails.png', alt: 'Cocktails and Shots' },
+    { title: 'SOFTGETRÄNKE', image: '/images/sp-softgetraenke.png', alt: 'Soft Drinks' },
+    { title: 'KAFFEE & TEE', image: '/images/sp-kaffee-tee.png', alt: 'Coffee and Tea' },
+    { title: 'WÄRME KÜCHE', image: '/images/sp-pizza.png', alt: 'Warm Kitchen' }
   ];
 
   // Spotlight effect handler
@@ -36,39 +28,10 @@ const MenuSection = () => {
     card.style.setProperty('--spotlight-y', '50%');
   };
 
-
-
-  const handleMenuClick = (category) => {
-    if (menuData[category.key]) {
-      setSelectedMenu(menuData[category.key]);
-      setIsPopupOpen(true);
-    }
-  };
-
-  // Touch handlers for mobile animations
-  const handleTouchStart = (e) => {
-    const card = e.currentTarget;
-    card.style.transform = 'scale(0.95)';
-  };
-
-  const handleTouchEnd = (e) => {
-    const card = e.currentTarget;
-    setTimeout(() => {
-      card.style.transform = '';
-    }, 100);
-  };
-
-  const closePopup = () => {
-    setIsPopupOpen(false);
-    setSelectedMenu(null);
-  };
-
   return (
     <section id="menu" className="menu-section">
       <div className="container">
-        <h2 className="section-title">
-          <SimpleGlitchText>{t('menuTitle')}</SimpleGlitchText>
-        </h2>
+        <h2 className="section-title">Unsere Speisenkarte</h2>
         
         <div className="menu-grid">
           {menuCategories.map((category, index) => (
@@ -77,16 +40,9 @@ const MenuSection = () => {
               className="menu-card spotlight-card"
               onMouseMove={handleMouseMove}
               onMouseLeave={handleMouseLeave}
-              onTouchStart={handleTouchStart}
-              onTouchEnd={handleTouchEnd}
-              onClick={() => handleMenuClick(category)}
-              tabIndex={0}
-              role="button"
-              aria-label={`Open menu ${category.title}`}
               style={{
                 '--spotlight-x': '50%',
-                '--spotlight-y': '50%',
-                cursor: 'pointer'
+                '--spotlight-y': '50%'
               }}
             >
               <div className="menu-card-image">
@@ -95,6 +51,7 @@ const MenuSection = () => {
                   <h3 className="menu-card-title">{category.title}</h3>
                 </div>
               </div>
+
             </div>
           ))}
         </div>
@@ -103,12 +60,6 @@ const MenuSection = () => {
           <p className="availability-text">ESSEN VERFÜGBAR: 17:00 - 21:30</p>
         </div>
       </div>
-
-      <MenuPopup 
-        isOpen={isPopupOpen}
-        onClose={closePopup}
-        menuData={selectedMenu}
-      />
     </section>
   );
 };

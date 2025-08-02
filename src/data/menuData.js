@@ -22,7 +22,7 @@ export const menuData = {
   },
   
   cocktails: {
-    title: 'COKTAILS & SHOTS',
+    title: 'Cocktails & Shots',
     items: [
       { name: 'Moscow Mule', price: '€8.50', description: 'Vodka, ginger beer, and lime' },
       { name: 'Old Fashioned', price: '€9.20', description: 'Whiskey, sugar, bitters, orange' },
