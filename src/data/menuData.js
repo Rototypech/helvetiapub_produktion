@@ -33,12 +33,30 @@ export const menuData = {
   
   wein: {
     title: 'WEIN',
-    items: [
-      { name: 'Riesling', price: '€6.50', description: 'Crisp German white wine' },
-      { name: 'Pinot Noir', price: '€7.20', description: 'Elegant red wine from Burgundy' },
-      { name: 'Sauvignon Blanc', price: '€6.80', description: 'Fresh New Zealand white' },
-      { name: 'Cabernet Sauvignon', price: '€7.50', description: 'Bold Californian red' },
-      { name: 'House Wine', price: '€5.50', description: 'Daily selection by the glass' }
+    categories: [
+      {
+        categoryName: '🍷 Rotweine',
+        categoryDescription: 'Offene Rotweine vom Fass',
+        items: [
+          { name: 'Pinot Noir', price: 'CHF 5.50', description: 'Klassischer, eleganter Rotwein mit feinen Aromen von roten Beeren und weichem Abgang.' },
+          { name: 'Tirteo Barbera', price: 'CHF 7.50', description: 'Intensiv, fruchtig und würzig – ein typischer Barbera aus dem Piemont mit Charakter.' }
+        ]
+      },
+      {
+        categoryName: '🥂 Weissweine',
+        categoryDescription: 'Offene Weissweine vom Fass',
+        items: [
+          { name: 'Fendant', price: 'CHF 5.50', description: 'Leichter, spritziger Walliser Weisswein mit mineralischer Note – der Klassiker zum Apéro.' },
+          { name: 'Johannisberg', price: 'CHF 5.50', description: 'Fruchtbetonter Weisswein aus dem Wallis, vollmundig mit Aromen von reifen Birnen und Honig.' }
+        ]
+      },
+      {
+        categoryName: '🌸 Roséwein',
+        categoryDescription: 'Eleganter Rosé vom Fass',
+        items: [
+          { name: 'Œil de Perdrix', price: 'CHF 5.50', description: 'Eleganter Rosé aus Neuenburg – zartfruchtig mit feinem Erdbeerduft.' }
+        ]
+      }
     ]
   },
   
