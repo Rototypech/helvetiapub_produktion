@@ -9,6 +9,7 @@ const Header = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const { language, toggleLanguage } = useLanguage();
   const { t } = useTranslation();
 
