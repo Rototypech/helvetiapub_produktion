@@ -20,7 +20,7 @@ const Contact = () => {
               </div>
               <div className="contact-details">
                 <h3 className="contact-label">ADRESSE</h3>
-                <p className="contact-text">Bahnhofstrasse 1, 3855 Brienz</p>
+                <p className="contact-text">Behämsgasse 1, 3855 Brienz</p>
               </div>
             </div>
             <div className="contact-item">
@@ -77,7 +77,7 @@ const Contact = () => {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Helvetia Pub Brienz - Bahnhofstrasse 1, 3855 Brienz"
+                title="Helvetia Pub Brienz - Behämsgasse 1, 3855 Brienz"
               ></iframe>
               <div className="map-link-below">
                 <a 
