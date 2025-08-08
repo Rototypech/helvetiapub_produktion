@@ -21,6 +21,7 @@ const Contact = () => {
               <div className="contact-details">
                 <h3 className="contact-label">ADRESSE</h3>
                 <p className="contact-text">Behämsgasse 1, 3855 Brienz</p>
+                {/* Force cache bust - new address */}
               </div>
             </div>
             <div className="contact-item">
