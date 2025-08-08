@@ -1,6 +1,6 @@
 {
   "name": "helvetia-pub-landing",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://landingpagehelvetiapub-r7p05h83v-rototypes-projects.vercel.app",
   "private": true,
   "dependencies": {
