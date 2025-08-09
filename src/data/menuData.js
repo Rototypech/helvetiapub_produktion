@@ -67,11 +67,23 @@ export const menuData = {
         categoryName: 'Cocktails',
         categoryDescription: 'CHF 12.00 / ca. 25 cl',
         items: [
-          { name: 'Margarita', price: 'CHF 12.00', description: 'Tequila, Cointreau, frische Limette' },
-          { name: 'Mojito', price: 'CHF 12.00', description: 'Rum, Limette, Rohrzucker, frische Minze, Soda' },
-          { name: 'Hugo', price: 'CHF 12.00', description: 'Holunder, Prosecco, Minze, Soda' },
-          { name: 'Mimosa', price: 'CHF 12.00', description: 'Orangensaft & Prosecco' },
-          { name: 'Passion Vodka', price: 'CHF 12.00', description: 'Absolut, Passionsfrucht, Limette' }
+          { name: 'Long Island Ice Tea', price: 'CHF 12.00', description: '2 cl Bacardi, 2 cl Vodka, 2 cl Tequila, 2 cl Cointreau, 2 cl Zitronensaft, Cola, Limette, Eis' },
+          { name: 'Mojito', price: 'CHF 12.00', description: '5 cl Havana Club, 1,5 cl Zuckersirup, 3 BL weißer Zucker, 4 cl Mineralwasser, 1 Limette, Minze, Eis' },
+          { name: 'Margarita', price: 'CHF 12.00', description: '1 cl Zuckersirup, 2 cl Zitronensaft, 4 cl Tequila, Eis' },
+          { name: 'Mimosa', price: 'CHF 12.00', description: 'Orangensaft, Prosecco' },
+          { name: 'Hugo', price: 'CHF 12.00', description: 'Holunderblütensirup, 1 cl Prosecco, 1 cl Mineralwasser, Minze' },
+          { name: 'Blue Lagoon', price: 'CHF 12.00', description: '4 cl weißer Vodka, 3 cl Blue Curaçao, 3 cl frisch gepresster Zitronensaft, Sprite, Zitronenscheibe' },
+          { name: 'Cuba Libre', price: 'CHF 12.00', description: '4 cl Havana Club Braun, Cola, Limettenstücke, Eis' },
+          { name: 'Tequila Sunrise', price: 'CHF 12.00', description: 'Tequila, Orangensaft, Grenadine, Eis' },
+          { name: 'Negroni', price: 'CHF 12.00', description: '3 cl Gin (Bombay), 3 cl Martini Rosso, 3 cl Campari, Eis, Orangenzeste oder Scheibe' },
+          { name: 'Pink Grapefruit Spritz', price: 'CHF 12.00', description: '2 cl Monin Pamplemousse Sirup, 4 cl Wermut (Martini oder Martini Rosato), Prosecco zum Auffüllen, Eis' },
+          { name: 'Gin Pamplemousse', price: 'CHF 12.00', description: '4 cl Gin, 2 cl Monin Pamplemousse Sirup, 2 cl Zitronensaft, Tonic Water zum Auffüllen, Eis' },
+          { name: 'Tequila Grapefruit Sour', price: 'CHF 12.00', description: '4 cl Tequila, 2 cl Monin Pamplemousse Sirup, 2 cl Limettensaft, Eis' },
+          { name: 'Passionsfruit Caipiroska', price: 'CHF 12.00', description: '5 cl Vodka, 2 cl Monin Passion Fruit, 2–3 Limettenviertel, Crushed Eis' },
+          { name: 'Passionsfruit Spritz', price: 'CHF 12.00', description: '2 cl Monin Passion Fruit, 4 cl Martini Bianco oder Prosecco, Soda oder Tonic zum Auffüllen, Limettenscheiben, Eis' },
+          { name: 'Limoncello Spritz', price: 'CHF 12.00', description: '4 cl Limoncello, 6 cl Prosecco, 2 cl Soda, Eis, Zitrone' },
+          { name: 'Limoncello Tonic', price: 'CHF 12.00', description: '4 cl Limoncello, Tonic Water, Eis' },
+          { name: 'Caipirinha', price: 'CHF 12.00', description: '6 cl Cachaça, 1 Stück Limette, 2 EL Rohrzucker, 5 EL Crushed Eis, mit Mineralwasser auffüllen' }
         ]
       },
       {
@@ -88,17 +100,11 @@ export const menuData = {
         categoryName: 'Longdrinks',
         categoryDescription: 'CHF 12.00 / ca. 20 cl',
         items: [
-          { name: 'Gin Tonic', price: 'CHF 12.00', description: 'Gordon\'s + Tonic Water' },
           { name: 'Vodka Lemon', price: 'CHF 12.00', description: 'Absolut + Bitter Lemon' },
-          { name: 'Vodka Red Bull', price: 'CHF 12.00', description: 'Absolut + Red Bull' },
-          { name: 'Cuba Libre', price: 'CHF 12.00', description: 'Havana Club + Cola + Limette' },
           { name: 'Campari Orange', price: 'CHF 12.00', description: 'Campari + Orangensaft' },
-          { name: 'Cynar Tonic', price: 'CHF 12.00', description: 'Cynar + Tonic Water' },
-          { name: 'Negroni', price: 'CHF 12.00', description: 'Gin + Campari + Martini' },
-          { name: 'Aperol Spritz', price: 'CHF 12.00', description: 'Aperol + Prosecco + Soda' },
-          { name: 'Tequila Sunrise', price: 'CHF 12.00', description: 'Tequila + Orangensaft + Grenadin' },
-          { name: 'Blue Lagoon', price: 'CHF 12.00', description: 'Vodka + Blue Curaçao + Zitrone' },
-          { name: 'Long Island Iced Tea', price: 'CHF 12.00', description: 'Die volle Ladung in einem Glas 🍹🍺' }
+          { name: 'Gin Tonic', price: 'CHF 12.00', description: 'Gordon\'s + Tonic Water' },
+          { name: 'Vodka Red Bull', price: 'CHF 12.00', description: 'Absolut + Red Bull' },
+          { name: 'Cynar Tonic', price: 'CHF 12.00', description: 'Cynar + Tonic Water' }
         ]
       },
       {
