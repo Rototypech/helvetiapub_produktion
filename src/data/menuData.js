@@ -1,3 +1,4 @@
+/* Updated cocktails menu - force cache bust */
 export const menuData = {
   bier: {
     title: 'BIER',
