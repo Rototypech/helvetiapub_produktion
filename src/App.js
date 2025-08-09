@@ -1,4 +1,5 @@
 // Force new build hash for Vercel deployment
+// Trigger deployment - version 0.1.5
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
