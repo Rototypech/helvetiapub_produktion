@@ -2,8 +2,10 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import BlurText from './BlurText';
 import TextType from './TextType';
+import MobileSlidingText from './MobileSlidingText';
 import LightRaysReactBits from './LightRaysReactBits';
 import { useTranslation } from '../hooks/useTranslation';
+import './MobileSlidingText.css';
 
 const HeroParallax = () => {
   const ref = useRef(null);
@@ -163,12 +165,13 @@ const HeroParallax = () => {
           />
         </div>
 
-        {/* Typewriter Animation with German Text */}
+        {/* Typewriter Animation with German Text - Desktop Only */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.2 }}
           style={{ marginBottom: '2.5rem' }}
+          className="hidden md:block"
         >
           <TextType
             text={t('heroTypewriter')}
@@ -192,6 +195,20 @@ const HeroParallax = () => {
               justifyContent: 'center',
               fontSize: '1.8rem'
             }}
+          />
+        </motion.div>
+
+        {/* Mobile Sliding Text Animation */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1.2 }}
+          style={{ marginBottom: '2.5rem' }}
+          className="block md:hidden"
+        >
+          <MobileSlidingText 
+            text="Atmosphäre, Geschmack & gute Laune!"
+            className="text-center"
           />
         </motion.div>
 
